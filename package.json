@@ -18,7 +18,7 @@
         "sort-by": "^1.2.0"
     },
     "devDependencies": {
-        "@types/react": "^19.0.5",
+        "@types/react": "^19.0.7",
         "@types/react-dom": "^19.0.3",
         "@vitejs/plugin-react": "^4.3.4",
         "eslint": "^8.56.0",
