@@ -33,6 +33,7 @@ export default function Contact() {
                     <p>
                         <a
                             target="_blank"
+                            rel="noreferrer"
                             href={`https://twitter.com/${contact.twitter}`}
                         >
                             {contact.twitter}
@@ -68,8 +69,7 @@ export default function Contact() {
 }
 
 function Favorite({ contact }) {
-    // yes, this is a `let` for later
-    let favorite = contact.favorite;
+    const favorite = contact.favorite;
     return (
         <Form method="post">
             <button
