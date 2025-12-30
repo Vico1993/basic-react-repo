@@ -9,16 +9,16 @@ on:
             - main
 
 env:
-    NODE_VERSION: 20.x
+    NODE_VERSION: 22.x
 
 jobs:
     build:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v4
+            - uses: actions/checkout@v6
 
             - name: Setup Environment ( ${{ env.NODE_VERSION }} )
-              uses: actions/setup-node@v4
+              uses: actions/setup-node@v6
               with:
                   node-version: ${{ env.NODE_VERSION }}
 
@@ -31,10 +31,10 @@ jobs:
     lint:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v4
+            - uses: actions/checkout@v6
 
             - name: Setup Environment ( ${{ env.NODE_VERSION }} )
-              uses: actions/setup-node@v4
+              uses: actions/setup-node@v6
               with:
                   node-version: ${{ env.NODE_VERSION }}
 

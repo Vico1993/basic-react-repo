@@ -11,9 +11,9 @@
     },
     "dependencies": {
         "localforage": "^1.10.0",
-        "match-sorter": "^8.0.3",
-        "react": "^19.1.1",
-        "react-dom": "^19.2.0",
+        "match-sorter": "^8.2.0",
+        "react": "^19.2.3",
+        "react-dom": "^19.2.1",
         "react-router-dom": "^7.9.6",
         "sort-by": "^1.2.0"
     },
