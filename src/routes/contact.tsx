@@ -1,4 +1,3 @@
-import React from "react";
 import { Form } from "react-router-dom";
 
 export default function Contact() {
@@ -68,8 +67,9 @@ export default function Contact() {
     );
 }
 
-function Favorite({ contact }) {
-    const favorite = contact.favorite;
+function Favorite({ contact }: { contact: { favorite: boolean } }) {
+    const { favorite } = contact;
+
     return (
         <Form method="post">
             <button
