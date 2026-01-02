@@ -6,7 +6,6 @@ interface IRouterError extends Error {
 
 export default function ErrorPage() {
     const error = useRouteError() as IRouterError;
-    console.error(error);
 
     return (
         <div id="error-page">
