@@ -7,11 +7,17 @@ version: 2
 updates:
   - package-ecosystem: "npm"
     directory: "/"
+    labels:
+      - "dependencies"
+      - "#patch"
     schedule:
       interval: "weekly"
       day: sunday
   - package-ecosystem: "github-actions"
     directory: "/"
+    labels:
+      - "dependencies"
+      - "#patch"
     schedule:
       interval: "weekly"
       day: sunday
