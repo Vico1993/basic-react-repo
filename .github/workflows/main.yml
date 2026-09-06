@@ -16,7 +16,7 @@ jobs:
         outputs:
             version: ${{ steps.package_version.outputs.version }}
         steps:
-            - uses: actions/checkout@v6
+            - uses: actions/checkout@v7
 
             - name: Get Package version
               id: package_version
@@ -42,7 +42,7 @@ jobs:
         name: todo
         runs-on: ubuntu-latest
         steps:
-            - uses: "actions/checkout@v6"
+            - uses: "actions/checkout@v7"
 
             - name: "TODO to Issue"
               uses: "alstr/todo-to-issue-action@v5"
